@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.to-do-list {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.to-do-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.to-do-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.to-do-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-button {
+  background-color: hsl(125, 47%, 54%);
+  margin-bottom: 10px;
+}
+
+.add-button:hover {
+  background-color: hsl(125, 47%, 44%);
+  transition: 0.5s;
+}
+
+.delete-button {
+  background-color: hsl(10, 90%, 50%);
+}
+
+.delete-button:hover {
+  background-color: hsl(10, 90%, 40%);
+  transition: 0.5s;
+}
+
+.move-button {
+  background-color: hsl(207, 90%, 64%);
+}
+
+.move-button:hover {
+  background-color: hsl(207, 90%, 54%);
+  transition: 0.5s;
+}
+
+input[type="text"] {
+  font-size: 1.4rem;
+  padding: 5px;
+  border: 2px solid hsla(0, 0%, 57%, 0.5);
+  border-radius: 5px;
+  color: hsl(0, 0%, 18%);
+  outline: none;
+  margin-bottom: 15px;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transition: 0.3s;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.delete-button,
+.move-button {
+  padding: 5px 9px;
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
